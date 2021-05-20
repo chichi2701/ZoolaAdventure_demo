@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2622179320719077019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2622179320719077018}
+  - component: {fileID: 2622179320719076997}
+  - component: {fileID: 2622179320719076996}
+  m_Layer: 0
+  m_Name: GameSave Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2622179320719077018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622179320719077019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.887762, y: -59.037266, z: -2.2515626}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2622179320719076997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622179320719077019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67748e8326068774ba81be2ca0b2aae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - {fileID: 11400000, guid: ae8d4fe3f708aa342abc5ff0d32161d9, type: 2}
+  - {fileID: 11400000, guid: e49bac54ecf6f8c4eba9627430db1ab7, type: 2}
+  - {fileID: 11400000, guid: 277a9dbbbb2a3364484294f840da4e24, type: 2}
+  - {fileID: 11400000, guid: 9678b9b33af29413eb1837d1ec959f4e, type: 2}
+  - {fileID: 11400000, guid: 6c92fa111bca59b4ba76f4721d0cf280, type: 2}
+--- !u!114 &2622179320719076996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622179320719077019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db172b97c83f79242abe0fc69a8ce6f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myInventory: {fileID: 11400000, guid: 8ee233d64bb736c48ab2feabb981a2e1, type: 2}
