@@ -19,9 +19,9 @@ public class Knockback : MonoBehaviour
             other.GetComponent<pot>().Smash();
         }
         */
-        if (other.gameObject.CompareTag(otherTag) && other.isTrigger)
+        if (other.gameObject.CompareTag(otherTag) )
         {
-            Rigidbody2D hit = other.GetComponentInParent<Rigidbody2D>();
+            Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
             if (hit != null)
             {
                 Vector3 difference = hit.transform.position - transform.position;
@@ -35,12 +35,15 @@ public class Knockback : MonoBehaviour
                     other.GetComponent<Enemy>().Knock(hit, knockTime);
                 }
 
-
-                if (other.GetComponentInParent<PlayerMovement>().currentState != PlayerState.stagger)
+                if (other.gameObject.CompareTag("Player"))
                 {
-                    hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
-                    other.GetComponentInParent<PlayerMovement>().Knock(knockTime);
+                    if (other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
+                    {
+                        hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+                        other.GetComponent<PlayerMovement>().Knock(knockTime);
+                    }
                 }
+                    
 
             }
         }

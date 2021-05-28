@@ -17,9 +17,10 @@ public class DamageOnContact : MonoBehaviour
             {
                 temp.Damage(damage);                
             }
-            this.transform.parent.gameObject.SetActive(false);
-           // Destroy(this.gameObject);                          
-            
+            this.transform.gameObject.SetActive(false);
+            //this.transform.parent.gameObject.SetActive(false);
+            // Destroy(this.gameObject);                          
+
         }
     }
 }
